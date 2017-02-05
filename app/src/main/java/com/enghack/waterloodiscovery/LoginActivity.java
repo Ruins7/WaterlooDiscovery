@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private static EditText usernametext;
     private static EditText passwordtext;
-    private static EditText appname;
+
     private static Intent intent_ivtime;
 
     private static User loginuser;

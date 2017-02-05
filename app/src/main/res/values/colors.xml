@@ -5,4 +5,5 @@
     <color name="correct_answer">#00CC00</color>
     <color name="incorrect_answer">#FF0000</color>
     <color name="input_background">#ff336699</color>
+    <color name="background">#ffffff</color>
 </resources>

@@ -544,11 +544,11 @@ public class MapsActivity extends AppCompatActivity
                 }
 
             } catch (IOException e) {
-                //e.printStackTrace();
+                e.printStackTrace();
             } catch (JSONException e) {
-                //e.printStackTrace();
+                e.printStackTrace();
             } catch (URISyntaxException e) {
-                //e.printStackTrace();
+                e.printStackTrace();
             }
 
             runOnUiThread(new Runnable() {
