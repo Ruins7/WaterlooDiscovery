@@ -3,4 +3,7 @@
     <string name="title_activity_maps">WaterlooDiscovery</string>
     <string name="url">http://52.60.42.250:5000/</string>
     <string name="connservertime">5000</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="permission_required_toast">permission_required_toast</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
 </resources>
