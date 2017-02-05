@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (true) {
                     Toast.makeText(LoginActivity.this, "success", Toast.LENGTH_LONG).show();
                     Intent intent_ivtime = new Intent();
-                    intent_ivtime.setClass(LoginActivity.this, SublocationActivity.class);
+                    intent_ivtime.setClass(LoginActivity.this, MapsActivity.class);
                     LoginActivity.this.startActivity(intent_ivtime);
 
                 } else {
