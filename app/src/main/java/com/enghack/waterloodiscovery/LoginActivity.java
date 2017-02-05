@@ -1,5 +1,6 @@
 package com.enghack.waterloodiscovery;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Looper;
@@ -16,9 +17,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.AbstractHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
@@ -30,7 +29,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.List;
 
 /**
  * Created by ruins7 on 2017-02-04.
@@ -53,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private static String urlbase;
     private static String url;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +142,20 @@ public class LoginActivity extends AppCompatActivity {
                                 //登录成功提示
                                 statusMessage = "Login successfully";
 
+                                //json解析
+                                JSONObject jsonobj = new JSONObject(out);
+                                loginuser.setProgress(jsonobj.getBoolean("progress"));
+                                try{
+                                    loginuser.setTask_id(jsonobj.getInt("currentTask"));
+                                } catch (JSONException e){
+                                    loginuser.setTask_id(1);
+                                }
+
+
+
+
+
+
                                 //赋值(对象传递)
                                 intent_ivtime = new Intent();
                                 intent_ivtime.putExtra("loginuser", (Serializable) loginuser);
@@ -172,4 +186,6 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+
+
 }

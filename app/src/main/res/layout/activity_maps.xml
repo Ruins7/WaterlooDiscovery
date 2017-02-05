@@ -38,5 +38,18 @@ android:text="Submit"
 android:textColor="@android:color/white"
 android:textSize="20dp" />
 
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="FUCKs"
+        android:gravity="center"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/input_background"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
 

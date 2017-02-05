@@ -11,7 +11,8 @@ public class User implements Serializable {
     private int uid;
     private String username;
     private String password;
-    private int utype;
+    private int task_id;
+    private boolean progress;
 
     public int getUid() {
         return uid;
@@ -37,11 +38,19 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public int getUtype() {
-        return utype;
+    public int getTask_id() {
+        return task_id;
     }
 
-    public void setUtype(int utype) {
-        this.utype = utype;
+    public void setTask_id(int task_id) {
+        this.task_id = task_id;
+    }
+
+    public boolean isProgress() {
+        return progress;
+    }
+
+    public void setProgress(boolean progress) {
+        this.progress = progress;
     }
 }
