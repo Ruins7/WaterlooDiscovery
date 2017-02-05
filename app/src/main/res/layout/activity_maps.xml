@@ -5,4 +5,16 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.enghack.waterloodiscovery.MapsActivity" />
+    tools:context="com.enghack.waterloodiscovery.MapsActivity"
+    map:cameraBearing="112.5"
+    map:cameraTargetLat="43.4643"
+    map:cameraTargetLng="-80.5204"
+    map:cameraTilt="30"
+    map:cameraZoom="15"
+    map:mapType="normal"
+    map:uiCompass="true"
+    map:uiRotateGestures="true"
+    map:uiScrollGestures="true"
+    map:uiTiltGestures="true"
+    map:uiZoomControls="true"
+    map:uiZoomGestures="true"/>
